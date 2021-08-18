@@ -55,7 +55,7 @@ module.exports = function solveSudoku(matrix) {
         }
         //console.log('------------------------------');
         for (let i = 1; i < size + 1; i++) {
-            const currNum = i.toString();
+            const currNum = i;
             const isValid = validate(currNum, currPos, matrix);
             //console.log('currPos ', currPos, 'currNum ',currNum, 'isValid ',isValid);
             if (isValid) {
