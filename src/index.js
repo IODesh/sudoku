@@ -6,7 +6,7 @@ module.exports = function solveSudoku(matrix) {
     const findEmpty = (matrix) => {
         for (let r = 0; r < size; r++) {
             for (let c = 0; c < size; c++) {
-                if(matrix[r][c] === '.') {
+                if(matrix[r][c] === 0) {
                     return [r,c];
                 }
             }
@@ -66,7 +66,7 @@ module.exports = function solveSudoku(matrix) {
                     return true;
                 }
 
-                matrix[x][y] = '.';
+                matrix[x][y] = 0;
             }
         }
 
